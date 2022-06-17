@@ -1,122 +1,128 @@
-.main-content{
-	min-height: 1000px;
-	margin: 20px auto;
-	width: 90%;
-	display: grid;
-	grid-template-columns: 300px 700px;
+body{
+    display: block;
+    background-color: #a6abad;
 }
 *{
-	font-family: 'Segoe UI',Tahoma, Geneva, verdana, sans-serif;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+list-style:none;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.left-section{
-	grid-column: span 1;
-	background: #565454;
-}
-.right-section{
-	grid-column: span 1/ span 2;
-	background: white;
-}
-img.profile-image {
-    display: block;
-    margin: auto;
-    border: 5px solid white;
-    border-radius: 30px;
-    width: 60%;
-    height: fit-content;
-}
-.left-content {
-    padding: 1rem;
-    color: white;
-}
-
-h2.name {
-    font-size: 1.2rem;
-    font-weight: 700;
-    text-align: center;
-    padding: 0.08rem;
-    text-transform: uppercase;
-    letter-spacing: 0.02px;
-}
-h4.designation {
-    font-size: 1rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding-bottom: 0.5rem;
-}
-.progress-bar {
-    border: 1px white solid;
-    height: 4px;
-    background: #fff;
-}
-.social-media {
-    display: flex;
-}
-li.icon {
-    list-style: none;
-}
-.fa.fa {
-    color: #6aaee9;
-    font-size: 20px !important;
-    /* border: none; */
-    display: contents;
-}
-h2.skills-title {
-    font-size: 0.75rem;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1rem 0.5rem;
-}
-li.icon a {
-    color: #fff;
-    text-decoration: unset;
-    font-size: 14px;
-}
-.social-media {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-}
-.social-media .icon {
-    /* justify-content: space-around; */
-    /* text-align: center; */
-    margin: 0 auto;
-}
-.skill-name {
-    font-size: 0.65rem;
-    font-weight: 400;
-    padding-bottom: 0.5rem;
-
-    text-transform: uppercase;
-}
-p.description {
-    font-size: 0.75rem;
-    text-align: center;
-    padding: 1rem;
-}
-.personal-details {
-    padding-top: 10px;
-}
-.right-section {
-    padding: 2rem 3rem;
-}
-.right-title h3 {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0.5rem;
-    letter-spacing: 1px;
-}
-.right-title p {
-    letter-spacing: 0.5px;
-    font-weight: 400;
-}
-.skill-name h3 {
-    font-size: 0.65rem;
-}
-@media only screen and (max-width: 600px) {
 
 .main-content{
-grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns:300px 700px;
+    min-height:1000px;
+    display: grid;
+    margin: 20px auto;
+    width:90%;
 }
+
+.left-section{
+    grid-column: span 1;
+    background-color:#242531;
+}
+.right-section{
+  grid-column: span 1/span 2;
+    background-color: #f7f7f7;
+  
+}
+section{
+    display: block;
+}
+
+.left-content{
+    padding: 1rem;
+}
+ .profile img{
+    display:block;
+    margin:auto;
+    border:5px white solid;
+    border-radius:30%;
+    width:60%;
+}
+.name{
+    font-size: 1.2rem;
+   font-weight:700;
+   text-align: center;
+   padding:0.8rem;
+  letter-spacing :0.02px;
+  color:white;
+  text-transform: uppercase;
+}
+.designation{
+   font-size:1rem; 
+   text-align: center;
+   padding-bottom: 0.5rem;
+   color:white;
+   text-transform: uppercase;
+}
+.description{
+    font-size:0.75rem; 
+   text-align: center;
+   padding:1rem;
+   color:white;
+}
+ .personal-details{
+     
+     display:inline-block;
+ }
+
+   
+.icon{
+    width:50px;
+    display:inline-block;
+    color:white;
+}
+
+
+.skills{
+    font-size: 0.75rem;
+    text-align:center;
+    text-transform: uppercase;
+    color:white;
+    padding:1rem 0.5rem;
+}
+.skill-name{
+    font-size: 0.65rem;
+   font-weight:0.65rem;
+    text-align: left;
+    padding-bottom:0.5rem;
+    color:white;
+}
+.progress-bar{
+    border:1px white solid;
+    border-radius: 0.1cm;
+    height:4px;
+   background-color: white;
+}
+.right-section{
+    padding:2rem 3rem;
+    display:flex;
+    flex-direction: row;
+    
+}
+.right-title{
+    text-transform:uppercase;
+    font-size:1.2rem;
+    font-weight:700 ;
+    padding:0.5rem;
+    letter-spacing: 1px;
+}
+.education-content{
+    display: flex;
+   
+}
+.experience-content {
+    display:flex;
+    flex-direction:row;
+ 
+}
+.project-content{
+    display: flex;
+  flex-direction:row;
+}
+.personal-details{
+    display:flex;
+   
 }
